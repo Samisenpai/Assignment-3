@@ -17,6 +17,9 @@
 <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
 
 
+<!--? font awesome link  -->
+<script src="https://kit.fontawesome.com/ee9eb84aaf.js" crossorigin="anonymous"></script>
+
 <!--? custom class and code  -->
 
 <style>
@@ -25,9 +28,30 @@
         font-family: "sora", serif;
     }
 
-    .font-secondary{
-        font-family: "ADLaM Display", serif;
+    .font-sec{
+        font-family: "ADLaM Display";
     }
+
+    .hero-section{
+        background-image: url(./c1-assets/cat-big.png);
+        background-repeat: no-repeat;
+        background-size: cover 100%;
+        background-position:right top;
+        
+    }
+
+    @media screen and (max-width:640px){
+        .hero-section{
+        height: auto;
+        background-image:none;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:right bottom;
+        
+    }    
+    }
+
+
 
 
 
@@ -39,6 +63,8 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'sec-color': '#FFF9F4',
+            'pri-color': '#FFDC26',
           }
         }
       }
@@ -52,7 +78,71 @@
 <body >
     <!--? header section  -->
    <header>
+        <!--? nav section  -->
+        <nav class="bg-sec-color">
+            <div class="navbar bg-base-100 lg:w-4/5 mx-auto bg-sec-color py-6">
+                <div class="navbar-start">
+                    <div class="flex justify-center items-center">
+                        <img src="./c1-assets/logo-header.png" alt="">
+                        <h1 class="hidden lg:block px-3 text-3xl font-semibold">Browse<span class="text-pri-color">4</span>Pets</h1>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 font-semibold text-xl">
+                    <li><a>Find a Pet</a></li>
+                      <li><a>Breeds</a></li>
+                      <li><a>Contact US</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class=" hidden lg:block text-xl p-4">
+                        <i class="fa-regular fa-bell mr-3"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  <div class="hidden lg:block">
+                    <button class="px-8 py-3 bg-white border-2 border-pri-color rounded-xl text-xl font-semibold mr-1" >Login</button>
+                    <button class="px-8 py-3 bg-pri-color rounded-xl text-xl font-semibold">Register</button>
+                  </div>
+                </div>
 
+                <!-- #test  -->
+
+                <div class="dropdown dropdown-end lg:hidden ">
+                    <div tabindex="0" role="button" class="btn m-1 bg-sec-color text-xl"><i class="fa-solid fa-bars"></i></div>
+                    <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                        <li><a>Find a Pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact US</a></li>
+
+                    </ul>
+                  </div>
+              </div>
+        </nav>
+
+        <!--? nav section  end-->
+        <!--? hero section  -->
+
+        <section class="lg:w-4/5 lg:mx-auto lg:mt-24 mt-10 lg:h-screen h-auto hero-section mx-3 ">
+            <div class="relative z-10">
+               <div>
+                <div class="lg:text-6xl text-4xl font-bold mb-4">
+                    <h1 class=" font-sec">Pamper Your Pet,<br> Because They Deserve <br> the Best</h1>
+                </div>
+               </div> 
+               <div class="mb-6">
+                <p class="text-xl w-4/5">
+                    Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!
+                </p>
+               </div>
+               <div>
+                <button class="px-8 py-3 bg-pri-color rounded-xl text-xl font-semibold">Register</button>
+               </div>
+            </div>
+
+            <div class="lg:hidden absolute top-80">
+                <img src="./c1-assets/cat-big.png" alt="">
+            </div>
+        </section>
    </header>
    <!--? header section end-->
 

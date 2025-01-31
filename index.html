@@ -32,6 +32,56 @@
         font-family: "ADLaM Display";
     }
 
+
+    .fish,
+     .fish-2,
+     .fish-3,
+     .fish-4,
+     .fish-5{
+      position: absolute;
+      top: 0;
+      left: 57%;
+      width: 50px;
+      height: 50px;
+      background: url(./c1-assets/fish-cartoon.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      animation: fall 5s infinite linear;
+    }
+
+    
+    .fish-2{
+      left: 60%;
+      animation: fall 7s infinite linear;
+    }
+
+    .fish-3{
+      left: 56%;
+      animation: fall 6s infinite linear;
+    }
+
+    .fish-4{
+      left: 58%;
+      animation: fall 9s infinite linear;
+    }
+
+    .fish-5{
+      left: 55%;
+      animation: fall 9s infinite linear;
+    }
+
+
+    @keyframes fall {
+     0%{
+      transform: translateY(-100px) rotate(0deg);
+      opacity: 1;
+     }
+     100%{
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+     }
+    }
    
 
     
@@ -127,6 +177,12 @@
                 <img class="" src="./c1-assets/cat-big.png" alt="">
             </div>
             </div>
+
+            <div class="fish"></div>
+            <div class="fish-2"></div>
+            <div class="fish-3"></div>
+            <div class="fish-4"></div>
+            <div class="fish-5"></div>
         </section>
    </header>
    <!--? header section end-->

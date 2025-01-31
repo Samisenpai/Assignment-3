@@ -32,24 +32,7 @@
         font-family: "ADLaM Display";
     }
 
-    /* .hero-section{
-        background-image: url(./c1-assets/cat-big.png);
-        background-repeat: no-repeat;
-        background-size: cover 100%;
-        background-position:right top;
-        
-    } */
-/* 
-    @media screen and (max-width:640px){
-        .hero-section{
-        height: auto;
-        background-image:none;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:right bottom;
-        
-    }    
-    } */
+   
 
     
 
@@ -82,7 +65,7 @@
     <!--? header section  -->
    <header>
         <!--? nav section  -->
-        <nav class=" bg-sec-color">
+        <nav class="border-b-2 border-gray-500 lg:border-none bg-sec-color">
             <div class="py-6 mx-auto navbar bg-base-100 md:w-11/12 lg:w-4/5 bg-sec-color">
                 <div class="navbar-start">
                     <div class="flex items-center justify-center">
@@ -126,12 +109,11 @@
         <!--? hero section  -->
 
         <section class="h-auto mx-3 mt-10 lg:w-4/5 lg:mx-auto lg:mt-24 lg:h-screen hero-section">
-            <div class="relative z-10">
-               <div>
+            <div class="flex flex-col">
+              <div class="z-10">
                 <div class="mb-4 text-4xl font-bold lg:text-6xl">
                     <h1 class="w-4/5 font-sec">Pamper Your Pet, <br class="hidden lg:block"> Because They Deserve <br class="hidden lg:block"> the Best</h1>
-                </div>
-               </div> 
+                </div> 
                <div class="mb-6">
                 <p class="w-4/5 text-lg">
                     Discover a world of treats, toys, and essentials handpicked for <br class="hidden lg:block"> your furry friends. Shop now and make tails wag with joy!
@@ -140,10 +122,10 @@
                <div>
                 <button class="px-8 py-3 text-xl font-semibold bg-pri-color rounded-xl">Register</button>
                </div>
+              </div>
+              <div class="z-0 flex items-end justify-end -mt-24 lg:-mt-96">
+                <img class="" src="./c1-assets/cat-big.png" alt="">
             </div>
-
-            <div class="absolute md:mb-12 lg:mb-0 md:bottom-52 lg:bottom-20 lg:right-40">
-                <img class="z-0 w-full" src="./c1-assets/cat-big.png" alt="">
             </div>
         </section>
    </header>
@@ -154,7 +136,7 @@
 
         <!--? main section end-->
       <!--? categories section  -->
-      <section class="mx-3 mb-32 md:mt-96 lg:mx-auto lg:w-4/5 mt-80 lg:mt-0">
+      <section class="mx-3 mt-10 mb-32 md:mt-96 lg:mx-auto lg:w-4/5 lg:mt-0">
 
         <div>
           <div>
@@ -423,6 +405,42 @@
       </section>
 
       <!--? pets Rescue section  -->
+
+      <!--? low price section  -->
+
+      <section class="mx-3 mb-32 lg:mx-auto lg:w-4/5 lg:mt-0"> 
+        <div>
+          <div>
+            <h1 class="mb-12 text-4xl font-bold font-sec">Everyday Low Price</h1>
+          </div>
+          <!--? cards  -->
+          <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+            <div class=" lg:gap-6  flex lg:items-center lg:justify-center bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] p-6 rounded-lg lg:col-span-2 flex-col lg:flex-row">
+              <div>
+                <p class="hidden mb-3 text-xl lg:block">Under Price</p>
+                <h1 class="mb-3 text-xl font-semibold lg:text-3xl lg:text-black font-sec">Pet Grooming Mitt</h1>
+                <h2 class="hidden mb-3 text-2xl text-white lg:block font-sec">(Easy Hair Removal)</h2>
+                <h1 class="text-3xl font-bold text-white lg:text-black">$7.99</h1>
+              </div>
+              <div class="flex items-end justify-end">
+                <img class="w-64 lg:w-full" src="./c1-assets/cute-dog-mid.png" alt="">
+              </div>
+            </div>
+
+
+            <div class=" lg:gap-6 flex flex-col bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] p-6 rounded-lg">
+              <div class="p-6 ">
+                <h1 class="mb-3 text-3xl font-semibold font-sec">T-Shirt for Dogs</h1>
+                <h1 class="text-3xl font-bold text-pri-color">$7.99</h1>
+              </div>
+              <div class="flex items-end justify-end ">
+                <img class="w-64 lg:w-80" src="./c1-assets/cute-pet-mid.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--? low price section  -->
 
    </main>
 
